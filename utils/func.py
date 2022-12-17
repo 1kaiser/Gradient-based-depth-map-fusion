@@ -64,14 +64,14 @@ def scale_image(img, size, device):
 def save_orig(input_rgb, img_loc, low_dep, pred, model_flag):
     if model_flag >= 5:
         input_rgb = (input_rgb * 255).astype('uint8')
-    input_rgb  = cv2.resize(input_rgb, None, fx=0.5, fy=0.5)
+    # input_rgb  = cv2.resize(input_rgb, None, fx=0.5, fy=0.5)
     h, w, _ = input_rgb.shape
-    low_dep = cv2.resize(low_dep.cpu().detach().numpy().squeeze(), (w, h))
+    # low_dep = cv2.resize(low_dep.cpu().detach().numpy().squeeze(), (w, h))
     pred = cv2.resize(pred.cpu().detach().numpy().squeeze(), (w, h))
-    low_dep = 255 - (low_dep - low_dep.min()) / (low_dep.max() - low_dep.min()) * 255
+    # low_dep = 255 - (low_dep - low_dep.min()) / (low_dep.max() - low_dep.min()) * 255
     pred = 255 - (pred - pred.min()) / (pred.max() - pred.min()) * 255
-    result = np.hstack((low_dep, low_dep, pred))
+    result = pred
     plt.imsave(img_loc, result, cmap='inferno')
     result = cv2.imread(img_loc)
-    result[:h, :w, :] = input_rgb
+    # result[:h, :w, :] = input_rgb
     cv2.imwrite(img_loc, result)
