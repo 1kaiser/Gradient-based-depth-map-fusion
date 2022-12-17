@@ -184,7 +184,9 @@ def run(args):
                 low_dep, high_dep = visual_crfs(low_dep, high_dep)
 
             low_dep, high_dep, pred = Fusion_model.inference(low_dep, high_dep)
-        save_orig(img, f'{args.output_path}/{args.pred_model}_{index}.png', low_dep, pred, model_flag)
+        number = 100000000
+        save_orig(img, f'{args.output_path}/out_{number + index}.png', low_dep, pred, model_flag)
+
 
 
 
