@@ -40,24 +40,17 @@ This repository contains code and models for our [paper](https://arxiv.org/pdf/2
 
 
 
-3. Download fusion model [model_dict.pt](https://github.com/YuiNsky/Gradient-based-depth-map-fusion/releases/download/v1.0/model_dict.pt) and place in the folder `models`.
+3. Create a folder `models` Download fusion model [model_dict.pt](https://github.com/1kaiser/Gradient-based-depth-map-fusion/releases/download/v0.1/model_dict.pt) and place in the folder `models`.
 
    
 
 
 4. Download one or more backbone pretrained model.
 
-     ​     LeRes: [res50.pth](https://cloudstor.aarnet.edu.au/plus/s/VVQayrMKPlpVkw9) or [res101.pth](https://cloudstor.aarnet.edu.au/plus/s/lTIJF4vrvHCAI31), place in the folder `LeRes`.
+     ​     LeRes: [res50.pth](https://github.com/1kaiser/Gradient-based-depth-map-fusion/releases/download/v0.1/res50.pth) or [res101.pth](https://github.com/1kaiser/Gradient-based-depth-map-fusion/releases/download/v0.1/res101.pth), place in the folder `LeRes`.
 
-     ​     DPT: [dpt_hybrid-midas-501f0c75.pt](https://github.com/intel-isl/DPT/releases/download/1_0/dpt_hybrid-midas-501f0c75.pt), place in the folder `dpt/weights`.
-
-     ​     SGR: [model.pth.tar](https://drive.google.com/file/d/1p8c8-nUTNry5usQmGdTC2TrwWrp3dQ0y/view?usp=sharing) , place in the folder `SGR`.
-
-     ​     MiDas: [model.pt](https://drive.google.com/file/d/1nqW_Hwj86kslfsXR7EnXpEWdO2csz1cC), place in the folder `MiDaS`.
-
-     ​     NeWCRFs: [model_nyu.ckpt](https://virutalbuy-public.oss-cn-hangzhou.aliyuncs.com/share/newcrfs/models/model_nyu.ckpt), place in the folder `newcrfs`.
-     
-     
+   ​     MiDas: [model.pt](https://github.com/1kaiser/Gradient-based-depth-map-fusion/releases/download/v0.1/model.pt), place in the folder `MiDaS`.
+    
 
 
 5. The code was tested with Python 3.8, PyTorch 1.9.1, OpenCV 4.6.0.
@@ -95,7 +88,7 @@ Then you can evaluate our fusion model with specified monocular depth estimation
 python eval.py -p LeRes50 -d middleburry2021
 ```
 
-Use the flag `-p` to switch between different backbones. Possible options are `LeRes50` (default),  `SGR`, `MiDaS`, `DPT` and `NeWCRFs`.
+Use the flag `-p` to switch between different backbones. Possible options are `LeRes50` (default),  `MiDaS`
 
 Use the flag `-d` to switch between different datasets. Possible options are `middleburry2021` (default), `multiscopic` and `hypersim`.
 
