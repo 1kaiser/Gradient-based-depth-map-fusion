@@ -2,6 +2,9 @@
 
 
 
+https://user-images.githubusercontent.com/26379748/208254270-91b308d9-59de-46de-b4be-9bc37a70e8cc.mp4
+
+
 ## Multi-resolution Monocular Depth Map Fusion by Self-supervised Gradient-based Composition
 
 This repository contains code and models for the [paper](https://arxiv.org/pdf/2212.01538.pdf):
