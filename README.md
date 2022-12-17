@@ -44,7 +44,7 @@ This repository contains code and models for the [paper](https://arxiv.org/pdf/2
 
 
 
-3. Create a folder `models` Download fusion model [model_dict.pt](https://github.com/1kaiser/Gradient-based-depth-map-fusion/releases/download/v0.1/model_dict.pt) and place in the folder `models`.
+3. Create a folder `models` Download `fusion model` [model_dict.pt](https://github.com/1kaiser/Gradient-based-depth-map-fusion/releases/download/v0.1/model_dict.pt) and place in the folder `models`.
 
    
 
@@ -66,7 +66,7 @@ This repository contains code and models for the [paper](https://arxiv.org/pdf/2
 2) Run our model with a monocular depth estimation method:
 
     ```shell
-    python run.py -p LeRes50
+    python run.py -p LeRes50 -m <path to fusion model> -i <image folder> -o <output folder>
 	```
 
 
