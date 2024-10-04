@@ -1,5 +1,7 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1kaiser/Gradient-based-depth-map-fusion/blob/main/Depth_Map_LeRes.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1kaiser/Gradient-based-depth-map-fusion/blob/main/ml_depth_pro.ipynb) >> apple [ml-depth-pro](https://github.com/apple/ml-depth-pro/tree/main)
 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/1kaiser/Gradient-based-depth-map-fusion/blob/main/Depth_Map_LeRes.ipynb) >> LeRes
 
 
 https://user-images.githubusercontent.com/26379748/208254270-91b308d9-59de-46de-b4be-9bc37a70e8cc.mp4
