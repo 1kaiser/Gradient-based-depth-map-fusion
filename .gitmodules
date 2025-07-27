@@ -1,3 +1,6 @@
 [submodule "Video-Depth-Anything"]
 	path = Video-Depth-Anything
 	url = https://github.com/DepthAnything/Video-Depth-Anything.git
+[submodule "vision-transformer"]
+	path = vision-transformer
+	url = https://github.com/1kaiser/2D-Positional-Encoding-Vision-Transformer.git
